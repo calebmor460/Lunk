@@ -3,7 +3,6 @@ import torch, shutil, json, concurrent.futures, sys
 from transformers import AutoModelForCausalLM, AutoTokenizer, AutoModel
 import psutil, os
 import gradio as gr
-import numpy as np
 import random
 blend_ratio, fp16, always_output_fp16, max_shard_size, verbose_info, force_cpu, load_sharded = 0.5, False, True, "2000MiB", True, True, True
 test_prompt, test_max_length = "Test, ", 32
